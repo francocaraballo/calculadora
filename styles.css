@@ -24,6 +24,7 @@
     font-size: 3rem;
     border-radius: 10px;
     border: none;
+    text-align: end;
    
 }
 
@@ -39,4 +40,8 @@
     border-radius: 15px;
     border: none;
     font-size: 2rem;
+}
+
+.keys-container input:hover {
+    background-color: rgb(154, 153, 153);
 }

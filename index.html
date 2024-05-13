@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <title>Calculadora</title>
+    <title>Calculator</title>
 </head>
 <body>
     <div class="container">
-        <input type="text" class="visor">
+        <input type="text" class="visor" disabled>
         <div class="keys-container">
-            <input type="button" value="0">
-            <input type="button" value="1">
-            <input type="button" value="2">
-            <input type="button" value="3">
-            <input type="button" value="4">
-            <input type="button" value="5">
-            <input type="button" value="6">
-            <input type="button" value="7">
-            <input type="button" value="8">
-            <input type="button" value="9">
-            <input type="button" value="+">
-            <input type="button" value="-">
-            <input type="button" value="/">
-            <input type="button" value="*">
-            <input type="button" value="=">
+            <input type="button" value="0" onclick="addArgument('0')">
+            <input type="button" value="1" onclick="addArgument('1')">
+            <input type="button" value="2" onclick="addArgument('2')">
+            <input type="button" value="3" onclick="addArgument('3')">
+            <input type="button" value="4" onclick="addArgument('4')">
+            <input type="button" value="5" onclick="addArgument('5')">
+            <input type="button" value="6" onclick="addArgument('6')">
+            <input type="button" value="7" onclick="addArgument('7')">
+            <input type="button" value="8" onclick="addArgument('8')">
+            <input type="button" value="9" onclick="addArgument('9')">
+            <input type="button" value="+" onclick="addArgument('+')">
+            <input type="button" value="-" onclick="addArgument('-')">
+            <input type="button" value="/" onclick="addArgument('/')">
+            <input type="button" value="*" onclick="addArgument('*')">
+            <input type="button" value="=" onclick="result()">
+            <input type="button" value="C" class="clear-button" onclick="clear()">
         </div>
     </div>
-    
+    <script src="main.js"></script>
 </body>
 </html>
